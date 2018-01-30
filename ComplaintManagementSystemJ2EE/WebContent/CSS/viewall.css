@@ -1,0 +1,85 @@
+@charset "ISO-8859-1";
+body {
+    background-color: #0084FF;
+}
+
+.view-content {
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    width:100%;
+    margin: 30px auto 50px auto;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+
+.card-main {
+    width: 90%;
+    margin: 20px 0px 10px 50px;
+    border-bottom: 1px solid #cccccca8;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.card-main p {
+    margin: 10px 0px 10px 20px;
+}
+
+.comp-date,.comp-id {
+    display: inline-block;
+}
+
+.comp-status,.prod-id{
+    float: right;
+    padding-right: 50px;
+    display: inline-block;
+}
+
+h3 {
+    padding: 20px 0px 0px 50px;
+    text-decoration: underline;
+    color:dodgerblue;
+}
+
+.card-main span {
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.team-id {
+	padding-left: 50px;
+}
+
+.red-pending {
+	color: red;
+	font-weight: bold;
+}
+
+.green-done { 
+	color: green;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+	.card-main {
+	display: flex;
+	flex-direction: column;
+	}
+	
+	.card-main p {
+	flex-grow: 1;
+	width: 80%;
+    margin-left: 0px;
+	}
+	
+	.view-content {
+	width: 90%;
+	}
+	
+}
